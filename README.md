@@ -1,37 +1,62 @@
-# 📢 Project : Book & User Management System 🔹
+# 📚 Advanced Library & User Management System (ERP-Style)
 
- Some time ago, I built a Book and User Management System using ASP.NET Core 6 MVC, and today I’d like to share it with you.
-This project includes:
+A comprehensive administrative platform designed to manage library assets and system users with a high level of granular control. This project highlights specialized implementation of **Role-Based Access Control (RBAC)**, **System Auditing (Logs)**, and an optimized **AJAX-driven UI**.
 
-# Role-based access for Admin and User.
+## 🚀 Core Features & Technical Implementation
 
-Admin:1:-Full CRUD functionality for books, pages, sliders, categories, and sub-categories.
-2:-:Site settings management (logo, contact info, social links, etc.).
-3:-Audit Log to track operations like adding, editing, or deleting content.
+### 🔐 Advanced Identity & RBAC
+- **Triple Role System:** Implemented **SuperAdmin**, **Admin**, and **User** roles using ASP.NET Core Identity.
+- **User Management:** Full administrative control over user accounts, including activation, deactivation, and profile management.
+- **Seed Data:** Pre-configured system roles and administrative accounts for immediate testing and deployment.
 
- Users: can download books as PDF.
+### 📝 System Auditing (Activity Logs)
+- **Action Tracking:** A specialized logging system that monitors all operations performed on the "Books" table.
+- **Transparency:** Automatically records the **Event Type**, **Timestamp**, and the **Admin Identity** responsible for each change, ensuring full accountability.
 
-# Users Information:
-Admin:ibrahemtabaneh@gmail.com
-User:Customer@domain.com
-Password for all:123456
+### 🛠️ Administrative Power (CMS Features)
+- **Library Inventory:** Full CRUD operations for Books, Categories, and Sub-Categories.
+- **Dynamic Site Settings:** Control over website identity (Logo, Name, Description, and Social Links).
+- **Page Content Management:** Dynamic control over Sliders, "About Us" content, and "Terms & Conditions".
 
+### 🎨 Seamless UI with AJAX & Modals
+- **In-Page CRUD:** Enhanced UX using **JavaScript** and **Bootstrap Modals** to manage data without full page reloads.
+- **Asynchronous Operations:** Utilizing AJAX for a smooth, modern administrative experience.
 
-# 🛠️ Technologies used:
-ASP.NET Core 6 (MVC),
-Entity Framework Core,
-SQL Server,
-JavaScript,
-Api,
-Repository pattern,
-swagger,
-Clean Architecture,
+## 🏗️ Architecture & Best Practices
+- **Repository Pattern:** Abstracted data layer for clean, maintainable, and testable code.
+- **Relational DB Design:** Optimized SQL Server schema managing complex many-to-many and one-to-many relationships.
+- **Dependency Injection (DI):** Fully utilized for service registration and decoupling.
 
+---
 
+## 📸 Project Screenshots
 
-# 🔗Live Site
-https://freebooks.runasp.net/
-# DataBase
-source:https://drive.google.com/file/d/1joDaZFxLh6wkA4nJeUpefsB3giyQOjZS/view?usp=sharing
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/340d8c60-827e-4774-90d8-3aad8823811f" width="48%" alt="Dashboard Overview" />
+  <img src="https://github.com/user-attachments/assets/4400829f-a57e-45e2-a23c-88dfdd73dd0c" width="48%" alt="User Management" />
+</div>
 
+<br />
 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/81e93ec3-5cec-4688-bcda-d8057599020d" width="48%" alt="Book Inventory" />
+  <img src="https://github.com/user-attachments/assets/f47fa734-e2e0-4756-9887-226170671372" width="48%" alt="System Logs" />
+</div>
+---
+
+## 👥 User Roles & Access Control
+
+### 🔑 Admin Credentials (For Testing)
+- **Email:** `ibrahemtabaneh@gmail.com`
+- **Password:** `123456`
+
+---
+
+## ⚙️ How to Run
+1. Clone the repository.
+2. Update the connection string in `appsettings.json`.
+3. Run `Update-Database` in the Package Manager Console.
+4. Launch the application (F5).
+
+---
+📫 **Connect with me:** [LinkedIn](https://www.linkedin.com/in/ibrahem-tabaneh-249683249)
