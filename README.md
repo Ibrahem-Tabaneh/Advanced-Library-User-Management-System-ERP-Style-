@@ -2,30 +2,33 @@
 
 A comprehensive administrative platform designed to manage library assets and system users with a high level of granular control. This project highlights specialized implementation of **Role-Based Access Control (RBAC)**, **System Auditing (Logs)**, and an optimized **AJAX-driven UI**.
 
+## 🚀 Tech Stack & Skills
+
+- **Backend:** ASP.NET Core 6.0 (MVC)
+- **Database:** Microsoft SQL Server & Entity Framework Core
+- **Security:** ASP.NET Core Identity (Roles & Permissions)
+- **Design Pattern:** Repository Pattern & Dependency Injection
+- **Frontend:** JavaScript, AJAX, Bootstrap Modals, and HTML/CSS
+
 ## 🚀 Core Features & Technical Implementation
 
 ### 🔐 Advanced Identity & RBAC
-- **Triple Role System:** Implemented **SuperAdmin**, **Admin**, and **User** roles using ASP.NET Core Identity.
+- **Triple Role System:** Implemented **SuperAdmin**, **Admin**, and **User** roles using **ASP.NET Core Identity**.
 - **User Management:** Full administrative control over user accounts, including activation, deactivation, and profile management.
-- **Seed Data:** Pre-configured system roles and administrative accounts for immediate testing and deployment.
+- **Seed Data:** Pre-configured system roles and administrative accounts for immediate testing.
 
 ### 📝 System Auditing (Activity Logs)
 - **Action Tracking:** A specialized logging system that monitors all operations performed on the "Books" table.
-- **Transparency:** Automatically records the **Event Type**, **Timestamp**, and the **Admin Identity** responsible for each change, ensuring full accountability.
+- **Transparency:** Automatically records the **Event Type**, **Timestamp**, and the **Admin Identity** responsible for each change.
 
 ### 🛠️ Administrative Power (CMS Features)
-- **Library Inventory:** Full CRUD operations for Books, Categories, and Sub-Categories.
+- **Library Inventory:** Full CRUD operations for Books, Categories, and Sub-Categories using the **Repository Pattern**.
 - **Dynamic Site Settings:** Control over website identity (Logo, Name, Description, and Social Links).
 - **Page Content Management:** Dynamic control over Sliders, "About Us" content, and "Terms & Conditions".
 
 ### 🎨 Seamless UI with AJAX & Modals
 - **In-Page CRUD:** Enhanced UX using **JavaScript** and **Bootstrap Modals** to manage data without full page reloads.
 - **Asynchronous Operations:** Utilizing AJAX for a smooth, modern administrative experience.
-
-## 🏗️ Architecture & Best Practices
-- **Repository Pattern:** Abstracted data layer for clean, maintainable, and testable code.
-- **Relational DB Design:** Optimized SQL Server schema managing complex many-to-many and one-to-many relationships.
-- **Dependency Injection (DI):** Fully utilized for service registration and decoupling.
 
 ---
 
@@ -42,6 +45,7 @@ A comprehensive administrative platform designed to manage library assets and sy
   <img src="https://github.com/user-attachments/assets/81e93ec3-5cec-4688-bcda-d8057599020d" width="48%" alt="Book Inventory" />
   <img src="https://github.com/user-attachments/assets/f47fa734-e2e0-4756-9887-226170671372" width="48%" alt="System Logs" />
 </div>
+
 ---
 
 ## 👥 User Roles & Access Control
